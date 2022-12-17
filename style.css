@@ -81,3 +81,14 @@ body {
     margin-left: auto;
     margin-top: auto;
 }
+
+.ulStyle {
+    display: flex;
+    list-style-type: none;
+}
+
+.liStyle {
+    display: flex;
+    flex-direction: row;
+    margin-right: 1rem;
+}
