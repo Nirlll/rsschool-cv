@@ -1,0 +1,545 @@
+/* inika-regular - latin */
+@font-face {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inika-v21-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/inika-v21-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/inika-v21-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/inika-v21-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/inika-v21-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/inika-v21-latin-regular.svg#Inika') format('svg'); /* Legacy iOS */
+  }
+  /* inika-700 - latin */
+  @font-face {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/inika-v21-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/inika-v21-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/inika-v21-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/inika-v21-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/inika-v21-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/inika-v21-latin-700.svg#Inika') format('svg'); /* Legacy iOS */
+  }
+
+  /* inter-regular - latin */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/inter-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/inter-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/inter-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/inter-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/inter-v12-latin-regular.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+  /* inter-700 - latin */
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/inter-v12-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/inter-v12-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/inter-v12-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/inter-v12-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/inter-v12-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/inter-v12-latin-700.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+
+html {
+    box-sizing: border-box; /**/
+    scroll-behavior: smooth;
+}
+*, *::before, *::after {
+    box-sizing: inherit ; /* Наследование от родителя */
+}
+
+body {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #636060;
+    background: #EDF2EC;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.unicText {
+    color: #E06733;
+}
+
+/*Header styles start*/
+
+.header {
+    /* position: fixed; /* фиксирует блок на странице */
+    top: 0; /*к вехней части*/
+    left: 0; /*выравнивание к левой чаcти*/
+    width: 100%;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap; /*перенос контента, контент не будет наезжать друг на друга*/
+    align-items: flex-end; /*Вертикальное выравнивание*/
+    justify-content: space-between; /*выравнивание по краям контента*/
+    padding-top: 42px;
+    padding-left: 112px;
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__item {
+    margin-right: 46px;
+}
+.header__item:last-child{
+    margin-right: 0;
+}
+
+.header__link {
+    font-size: 16px;
+    line-height: 50px;
+    color: #010201;
+    text-decoration-line: none; /*убирает нижнее подчеркивание*/
+}
+
+.header__link:hover, .header__link:focus, .header__link:active {
+    opacity: .75;
+}
+
+.header__logo {
+    margin-bottom: auto;
+}
+
+/*Header styles end*/
+
+
+/*Welcome styles start*/
+
+.welcome__div {
+    margin-top: 82px;
+    margin-left: 109px;
+    margin-right: 109px;
+    display: flex;
+}
+
+.leafs {
+    max-width: 448px;
+    max-height: 408px;
+    margin-bottom: 62px;
+}
+
+.text__welcome {
+    margin-left: 224px;
+}
+
+.title__welcome {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: left;
+    color: #717171;
+    max-width: 550px;
+    margin-bottom: 42px;
+    max-height: 102px;
+}
+
+.subtitle__welcome {
+    color: #636060;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+    max-width: 525.44px;
+    margin-bottom: 48px;
+}
+
+.learn__bttn {
+    border: 2px solid #E06733;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.learn__bttn-link {
+    align-items: center;
+    text-align: center;
+    color: #000000;   
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    margin: 14px 27px 14px 27px;
+}
+
+/*Welcome styles end*/
+
+
+/*About styles start*/
+
+.about__wrap {
+    background-color:white;
+    position: relative;
+    height: 666px;
+}
+
+.text__about {
+    padding-left: 110px;
+    padding-top: 161px;
+    width: 706px;
+}
+
+.title__about {
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    max-width: 463px;
+    margin-bottom: 40px;
+}
+
+.subtitle__about {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 156px;
+}
+
+.plant1 {
+    position: absolute;
+    top: 93px;
+    right: 109px;
+}
+/*About styles end*/
+
+
+/*Service styles start*/
+
+
+.service__warp {
+    position: relative;
+}
+
+.title__service {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    position: absolute;
+    padding: 40px 100px 90px 100px;
+    width: 506px;
+    top: 0;
+    left: 0;
+}
+
+.service__list {
+    position: absolute;
+    width: auto;
+    left: 557px;
+    top: 69px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service__bttn {
+    border: 1px solid #E06733;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 38px;
+}
+
+.service__text {
+    position: absolute;
+    margin: 224px 110px 141px 110px;
+}
+
+.service__link {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E06733;
+    text-decoration-line: none;
+    margin: 12px 54px 12px 54px;
+}
+
+.service__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 116px;
+    grid-row-gap: 55px;
+}
+
+.service__card {
+    border: solid 0.5px;
+    border-radius: 20px;
+    color: #E3E1D5;
+    grid-column: span 1;
+}
+
+.service__cards-img {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.service__card-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #E06733;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.service__card-desc {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #717171;
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+/*Service styles end*/
+
+
+/*Price styles start*/
+
+.price__wrap {
+    height: 560px;
+    background-color: white;
+    margin-top: 1300px;
+    position: relative;
+}
+
+.prices {
+    padding-left: 110px;
+    padding-top: 40px;
+    width: 392px;
+}
+
+.prices__title1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.prices__item {
+    margin-top: 60px;
+}
+
+.prices__title2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+    margin-bottom: 60px;
+    width: 452px;
+    text-align: right;
+}
+
+.gardeners {
+    
+    position: absolute;
+    margin-top: 40px;
+    margin-right: 110px;
+    margin-left: 780px;
+    top: 0;
+    
+}
+
+.contact-us__bttn {
+    border: 1px solid #E06733;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    float: right;
+}
+
+.contact-us__link {
+    margin: 12px 34px 12px 30px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #E06733;
+    text-decoration: none;
+}
+
+.price__item {
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+}
+
+.price__list {
+    position: absolute;
+    align-content: center;
+}
+
+.leafs__prices {
+    position: absolute;
+    left: 1180px;
+    top: 270px;
+    margin-top: 40px;
+}
+
+.leafs_prices-img {
+    width: 152px;
+    
+}
+
+/*Price styles end*/
+
+
+
+/*Conact styles start*/
+
+.contact__wrap {
+    position: relative;
+    background-color: inherit;
+    height: 550px;
+}
+
+.contact-us__title {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+}
+
+.contact-us {
+    position: absolute;
+    margin-left: 622px;
+    margin-right: 622px;
+    margin-top: 60px;
+}
+
+.contactWoman {
+    position: absolute;
+    margin-top: 52px;
+    margin-left: 110px;
+}
+
+.city {
+    position: absolute;
+    width: 450px;
+    height: 50px;
+    left: 881px;
+    top: 148px;
+}
+   
+
+
+
+
+
+
+
+/*Conact styles end*/
+
+/*FOOTER styles start*/
+
+.footer {
+    height: 130px;
+    flex: 0 0 auto;
+}
+
+.footer_wrap {
+    height: 130px;
+    background-color: white;
+    position: relative;
+}
+
+.footer-data {
+    margin-left: 110px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+.c {
+    margin-right: 20px;
+    color: #000000;
+}
+
+.year {
+    margin-right: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.github {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+    text-decoration: none;
+    
+}
+
+.rss {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+    margin-left: 338px;
+    text-decoration: none;
+}
+
+.social {
+    position: absolute;
+    margin-left: 1144px;
+    margin-top: 50px;
+}
+
+.social__item {
+    margin-right: 22px;
+    display: inline
+}
+
+.footer_logo_link {
+    text-decoration-line: none;
+}
+
+/*FOOTER styles end*/

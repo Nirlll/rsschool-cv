@@ -4,72 +4,253 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>CV</title>
-    <base target="_blank">
+    <title>Plants</title>
+    <link rel="icon" type="image/png" href="./img/svg/favicon.svg">
+    <link rel="stylesheet" href="./css/reser.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <main class="cv">
-        <section class="aboutme">
-            <header class="header">
-                <figure class="avatar">
-                    <img src= "./images/avatar/avatar.jpg" alt="MyAvatar" class="round">
-                </figure>
-            </header>
-            <article class="contacts">
-                <h3>Contacts</h3>
-                <ul>
-                <li>E-mail: yarikem@gmail.com</li>
-                <li>Discord: Nirl#4700</li>
-                <li>GitHub: Nirlll</li>
-            </ul>
-            </article>
-            <article class="skills">
-                <h3>Skills</h3>
-                <ul>
-                    <li>HTML (Basic)</li>
-                    <li>CSS (Basic)</li>
-                    <li>JavaScript (Basic)</li>
-                    <li>Git (Basic)</li>
-                </ul>
-            </article>
-            <article class="education">
-                <h3>Education</h3>
-                <p>Secondary specialized education Telecommunications technician</p>
-            </article>
-            <article class="lang">
-                <h3>Language</h3>               
-                <ul>
-                    <li>Russian - Native</li>
-                    <li>English - A1</li>
-                </ul>
-            </article>
-        </section>
-        <div class="vl"></div>
-        <section class="aboutme1">
-            <h1 class="name">Yaroslav Yemelyanov</h1>
-            <article>
-                <h2>About me</h2>
-                <p>I am 24 years old, I live in Minsk, I work with computers and sound equipment. I would like to learn a programming language and move on to higher goals.</p>                
-            </article><br>
-            <article>
-                <h2>Work experience</h2>
-                <p>It's still to come</p>
-            </article><br>
-            <article>
-                <h2>Code Exaple</h2>
-                <p>It's still to come</p>
-            </article><br>
-        <footer class="footer">
-            <nav>
-                <ul class="ulStyle">
-                    <li class="liStyle"><span class="RSSLink"><a href="https://rs.school/js/"><img src="./images/rsschool-logo/rsschool-logo.png" alt="RSSLink" class="RSSLink"></a></span></li>
-                    <li class="liStyle"><span class="gitLink"><a href="https://github.com/Nirlll" class="gitLink"><img src="./images/git-logo/Git-Icon.png" alt="GitLink" class="gitLink"></a></span></li>
-                </ul>
-            </nav>
-            <span class="year">2022</span>
-        </footer>
-        </section>
-    </main>
+    <header class="header">
+        <div class="wrapper">
+            <nav class="header__wrapper">
+                <div class="header__logo">
+                    <a href="/" class="header_logo_link">
+                    <img src="./img/svg/logo.svg" alt="plants_logo" class="header_logo_pic">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#!" class="header__link"><span class="unicText">Home</span></a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#about" class="header__link">About us</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#service" class="header__link">Service</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#price" class="header__link">Price</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#contact" class="header__link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 </body>
+
+<main class="main">
+    <div class="wrapper">
+        
+
+
+        <section class="welcome">
+            
+            <div class="welcome__div">
+                    
+                <div class="leafs">
+                    <img src="./img/leafs.png" alt="leafs">
+                </div>        
+                
+                <div class="text__welcome">
+                
+                    <h1 class="title__welcome">We grow <span class="unicText">plants</span> and give you oxygen</h1>
+                    <p class="subtitle__welcome">Lorem Ipsum is simply dummy text  of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <button class="learn__bttn">
+                        <a href="/" class="learn__bttn-link">LEARN MORE</a>
+                    </button>
+                </div>
+
+            </div>
+        </section>
+        
+        <section class="about">
+            <article article id="about"></article>
+            <div class="about__wrap">
+
+                <div class="text__about">
+                    <h2 class="title__about">We are professional experienced gardeners</h2>
+                    <p class="subtitle__about">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+                </div>
+                <div class="plant1">
+                    <img src="./img/houseplant1.png" alt="houseplant" class="1plant1">
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="service">
+            <article id="service"></article>
+            <div class="service__warp">
+                <div class="service__content">
+                    <h2 class="title__service"><span class="unicText">Service and our projects</span></h2>
+                    <div class="service__list">
+                        <button class="service__bttn">
+                            <a href="/" class="service__link"><span class="unicText">Gardens</span></a>
+                        </button>
+                        <button class="service__bttn">
+                            <a href="/" class="service__link"><span class="unicText">Lawn</span></a>
+                        </button>
+                        <button class="service__bttn">
+                            <a href="/" class="service__link"><span class="unicText">Planting</span></a>
+                        </button>
+                    </div>
+                </div>
+                <div class="service__text">
+                    <div class="service__cards">
+                        
+                        <div class="service__card"> 
+                            <div class="service__card-pic">
+                                <img src="./img/gardencare_1.jpg" alt="gardencare" class="service__cards-img">
+                            </div>
+                            <h3 class="service__card-title">Garden care</h3> 
+                            <p class="service__card-desc">Lorem Ipsum has been the industry</p>
+                        </div>
+
+                        <div class="service__card"> 
+                            <div class="service__card-pic">
+                                <img src="./img/planting_1.jpg" alt="planting" class="service__cards-img">
+                            </div>
+                            <h3 class="service__card-title">Planting</h3> 
+                            <p class="service__card-desc">Lorem Ipsum has been the industry</p>
+                        </div>
+
+                        <div class="service__card"> 
+                            <div class="service__card-pic">
+                                <img src="./img/lawncare_1.jpg" alt="lawncare" class="service__cards-img">
+                            </div>
+                            <h3 class="service__card-title">Lawn care</h3> 
+                            <p class="service__card-desc">Lorem Ipsum has been the industry</p>
+                        </div>
+
+                        <div class="service__card"> 
+                            <div class="service__card-pic">
+                                <img src="./img/planting_2.jpg" alt="planting" class="service__cards-img">
+                            </div>
+                            <h3 class="service__card-title">Planting</h3> 
+                            <p class="service__card-desc">Lorem Ipsum has been the industry</p>
+                        </div>
+
+                        <div class="service__card"> 
+                            <div class="service__card-pic">
+                                <img src="./img/gardencare_2.jpg" alt="gardencare" class="service__cards-img">
+                            </div>
+                            <h3 class="service__card-title">Garden care</h3> 
+                            <p class="service__card-desc">Lorem Ipsum has been the industry</p>
+                        </div>
+
+                        <div class="service__card"> 
+                            <div class="service__card-pic">
+                                <img src="./img/planting_3.jpg" alt="planting" class="service__cards-img">
+                            </div>
+                            <h3 class="service__card-title">Planting</h3> 
+                            <p class="service__card-desc">Lorem Ipsum has been the industry</p>
+                        </div>                       
+                    
+                    </div>
+                </div>         
+            </div>
+        </section>
+
+        <section class="price">
+            <article id="price"></article>
+            <div class="price__wrap">
+                
+                
+                
+                <div class="prices">
+                    <h2 class="prices__title1">Prices</h2>
+                    <div class="prices__item">
+                        <img src="./img/prices_itemWTF.png" alt="Что с этим делать?">
+                    </div>
+                
+                
+                
+                
+                    <div class="gardeners">
+                        <h2 class="prices__title2">Our best <span class="unicText">gardeners</span> are ready to help you</h2>
+
+                            <button class="contact-us__bttn">
+                                <a href="/" class="contact-us__link">
+                                    <span class="unicText">Contact us</span>
+                                </a>
+                            </button>
+                    
+                        </div>
+                </div>
+                <div class="leafs__prices">
+                    <img src="./img/leafs.png" alt="leafs" class="leafs_prices-img">
+                </div>
+
+            </div>
+                 
+        </section>
+
+        <section class="contact">
+            <article id="contact"></article>
+            <div class="contact__wrap">
+            
+                <div class="contact-us">
+                    <h3 class="contact-us__title"><span class="unicText">Contact us</span></h3>
+                </div>
+
+                <div class="contactWoman">
+                    <img src="./img/contactWoman.png" alt="contactWoman">
+                </div>
+
+                <div class="city">
+
+                    <img src="./img/SelectCity.png" alt="SelectCity">
+                    
+                </div>
+
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer_wrap">
+                <div class="footer-data">
+                    <span class="c">&#169</span>
+                    <span class="year">2022</span>
+                    <a href="https://github.com/Nirlll" class="github">github</a>
+                    <a href="https://rs.school/js-stage0/" class="rss">Rolling Scopes School</a>
+                </div>
+
+                <ul class="social">
+                
+                    <li class="social__item">
+                        <a href="/" class="footer_logo_link">
+                    <img src="./img/svg/insta-ico.svg" alt="insta_logo" class="footer_logo_pic">
+                    </a>
+                    </li>
+
+                    <li class="social__item">
+                        <a href="/" class="footer_logo_link">
+                        <img src="./img/svg/face-ico.svg" alt="facebook_logo" class="footer_logo_pic">
+                        </a>
+                    </li>
+                
+                    <li class="social__item">
+                        <a href="/" class="footer_logo_link">
+                        <img src="./img/svg/twitter-ico.svg" alt="twitter_logo" class="footer_logo_pic">
+                        </a>
+                    </li>
+                
+                    <li class="social__item">
+                        <a href="/" class="footer_logo_link">
+                        <img src="./img/svg/pinterest-ico.svg" alt="pinterest_logo" class="footer_logo_pic">
+                        </a>
+                    </li>
+
+                    
+                </ul>
+            </div>
+        </footer>
+    </div>
+</main>
+
 </html>
