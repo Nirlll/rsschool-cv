@@ -54,6 +54,7 @@
 
 html {
     box-sizing: border-box; /**/
+    scroll-behavior: smooth;
 }
 *, *::before, *::after {
     box-sizing: inherit ; /* Наследование от родителя */
@@ -128,10 +129,6 @@ body {
 
 /*Welcome styles start*/
 
-.welcome {
-
-}
-
 .welcome__div {
     margin-top: 82px;
     margin-left: 109px;
@@ -196,9 +193,6 @@ body {
 
 
 /*About styles start*/
-.about {
-    
-}
 
 .about__wrap {
     background-color:white;
@@ -236,9 +230,6 @@ body {
 
 /*Service styles start*/
 
-.service {
-
-}
 
 .service__warp {
     position: relative;
@@ -357,7 +348,10 @@ body {
     font-size: 40px;
     line-height: 48px;
     color: #000000;
+}
 
+.prices__item {
+    margin-top: 60px;
 }
 
 .prices__title2 {
@@ -460,6 +454,21 @@ body {
     margin-left: 110px;
 }
 
+.city {
+    position: absolute;
+    width: 450px;
+    height: 50px;
+    left: 881px;
+    top: 148px;
+}
+   
+
+
+
+
+
+
+
 /*Conact styles end*/
 
 /*FOOTER styles start*/
@@ -503,6 +512,7 @@ body {
     font-size: 20px;
     line-height: 50px;
     color: #000000;
+    text-decoration: none;
     
 }
 
@@ -514,18 +524,22 @@ body {
     line-height: 50px;
     color: #000000;
     margin-left: 338px;
+    text-decoration: none;
 }
 
 .social {
     position: absolute;
     margin-left: 1144px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
+.social__item {
+    margin-right: 22px;
+    display: inline
+}
 
 .footer_logo_link {
     text-decoration-line: none;
-    margin-right: 22px;
 }
 
 /*FOOTER styles end*/
